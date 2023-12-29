@@ -386,4 +386,154 @@ footer .footer-careers p {
   margin-bottom: 1rem;
 }
 
+@media(max-width: 48rem) {
+  .container {
+    margin: 0 1rem;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .navbar .main-menu ul {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding-top: 2rem;
+  }
+
+  .hero .container {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .hero .hero-left {
+    text-align: center;
+    animation: slideInFromTop 1s ease-in;
+  }
+
+  .hero .hero-left h1 {
+    font-size: 3rem;
+  }
+
+  .hero .hero-right {
+    animation: slideInFromBottom 1s ease-in;
+  }
+
+  .hero .btn-hero {
+    width: 100%;
+  }
+
+  .info h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .info p {
+    font-size: 1.2rem;
+  }
+
+  .info .cards-container {
+    grid-template-columns: 1fr;
+    grid-gap: 2;
+  }
+
+  .quote {
+    padding: 3.5rem 1.2rem 2.5rem;
+  }
+
+  .quote blockquote p {
+    font-size: 1.5rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .quote .quote-attr {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 1.25rem;
+  }
+
+  .cta .cta-left,
+  .cta .cta-right {
+    display: none;
+  }
+
+  .cta .container {
+    margin: 0;
+    border-radius: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .cta .cta-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+  }
+
+  .cta .cta-header {
+    grid-row: 1 / 2;
+    font-size: 2rem;
+  }
+
+  .cta .cta-para {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta .btn-cta {
+    grid-column: 1 / 2;
+    grid-row: 3;
+    justify-self: center;
+    width: 100%;
+  }
+
+  footer .footer-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "social"
+      "contact"
+      "careers"
+      "useful-links";
+    gap: 1rem;
+  }
+
+  footer .footer-grid h4 {
+    margin-bottom: 1.5rem;
+  }
+
+  footer .footer-social {
+    margin: 1rem 2rem 2rem;
+    grid-area: social;
+  }
+
+  footer .footer-contact {
+    grid-area: contact;
+    margin-bottom: 3rem;
+  }
+
+  footer .footer-careers {
+    grid-area: careers;
+    margin-bottom: 3rem;
+  }
+
+  footer .footer-useful-links {
+    grid-area: useful-links;
+  }
+
+  footer .copyright {
+    font-size: 0.875rem;
+  }
+}
+
+
+
+
+
 
